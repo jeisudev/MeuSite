@@ -10,6 +10,5 @@ justify-content: flex-end;
 display: flex;
 align-items: center;
 gap: 2.5rem;
-position: absolute;
 
 `;
