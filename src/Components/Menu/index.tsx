@@ -6,7 +6,7 @@ export function MenuSite(){
         <HeaderSite>
             <SettingsSite name='About Me' />
             <SettingsSite name='Skills' />
-            <SettingsSite name='Portifoleo' />
+            <SettingsSite name='Portifolio' />
             <SettingsSite name='Contato' />
         </HeaderSite>
     );
