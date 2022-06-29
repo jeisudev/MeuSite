@@ -3,7 +3,7 @@ import {createGlobalStyle} from "styled-components";
 export const GlobalStyle =  createGlobalStyle`
 
 :root{
-    
+    --black-00: #000000;
 }
 
 *{

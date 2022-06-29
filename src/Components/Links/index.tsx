@@ -2,12 +2,12 @@ import {NameLink} from './style';
 
 
 interface NamesProps{
-    nome: string;
+    name: string;
 }
 export function NameMenu(props:NamesProps){
     return(
         <NameLink>
-            <span>{props.nome}</span>
+            <span>{props.name}</span>
         </NameLink>
     );
 }
