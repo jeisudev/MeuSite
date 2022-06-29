@@ -1,5 +1,4 @@
 import {NameMenu} from '../Links/index';
-import {Link} from 'react-router-dom';
 import {CentralContainer, ListMenu} from './style';
 import { useState } from 'react';
 
@@ -11,20 +10,20 @@ export function MenuSite(){
     return(
         <div>
         <button type='button' onClick={ToggleMenu}>active</button>
-            <CentralContainer className={active ? 'active': ''}>
+            <CentralContainer className={!active ? 'active': ''}>
                 <ListMenu >
-                    <Link to="/">
+                    <span>
                         <NameMenu name='Home'/>
-                    </Link>
-                    <Link to="/">
+                    </span>
+                    <span>
                         <NameMenu name='About Me'/>
-                    </Link>
-                    <Link to="/">
+                    </span>
+                    <span>
                         <NameMenu name='Skills'/>
-                    </Link>
-                    <Link to="/">
+                    </span>
+                    <span>
                         <NameMenu name='Contact'/>
-                    </Link>
+                    </span>
                 </ListMenu>
             </CentralContainer>
         </div>

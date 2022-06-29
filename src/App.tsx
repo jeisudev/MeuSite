@@ -4,6 +4,7 @@ export function App() {
   return (
     <div >
       <HomePage />
+      <p>ola</p>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CentralContainer = styled.div`   
 position: fixed;
   top: 0;
-  right: -200px;
+  right: -400px;
   width: 400px;
   height: 100vh;
   background: var(--blue-00);
@@ -11,7 +11,7 @@ position: fixed;
   display: grid;
   place-items: center;
   transition: 0.5s;
-.active{
+&.active{
     right: 0;
 }
 `;
