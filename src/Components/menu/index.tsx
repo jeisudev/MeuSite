@@ -1,6 +1,6 @@
 
 
-export function HomePage(){
+export function MenuSite(){
     return(
         <div>
             
