@@ -6,7 +6,9 @@ interface NameButton{
 export function ButtonGlobal(props:NameButton){
     return(
         <ButtonStyle>
-            <span>{props.name}</span>
+            <span>
+                <a href="#">{props.name}</a>
+            </span>
         </ButtonStyle>
     );
 }

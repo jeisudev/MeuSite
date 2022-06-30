@@ -1,6 +1,7 @@
 import {NameMenu} from '../Links/index';
-import {CentralContainer, ListMenu} from './style';
+import {CentralContainer, ListMenu, PositionButton, PositionButtonHam} from './style';
 import { useState } from 'react';
+import {Equals, X} from 'phosphor-react';
 
 export function MenuSite(){
     const [active, setActive] = useState(false)
@@ -9,9 +10,14 @@ export function MenuSite(){
     }
     return(
         <div>
-        <button type='button' onClick={ToggleMenu}>active</button>
-            <CentralContainer className={!active ? 'active': ''}>
+            <PositionButtonHam>
+                 <Equals size={40} weight="bold" onClick={ToggleMenu} className="buttonActive" />
+            </PositionButtonHam>
+            <CentralContainer className={active ? 'active': ''}>
                 <ListMenu >
+                    <PositionButton>
+                        <X size={40} weight="bold" onClick={ToggleMenu} className="buttonClose"/>
+                    </PositionButton>
                     <span>
                         <NameMenu name='Home'/>
                     </span>

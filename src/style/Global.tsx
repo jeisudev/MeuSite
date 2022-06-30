@@ -20,7 +20,7 @@ export const GlobalStyle =  createGlobalStyle`
 }
 
 body{
-    background:var();
+    background: linear-gradient(92.5deg, #4677FF 23.4%, #27144A 115.48%);
 }
 
 `;
